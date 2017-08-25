@@ -20,7 +20,7 @@ Hacer un RS-VS con Arduino es muy sencillo, en su configuración mas simple solo
 + Un potenciometro de 10k ohms, para ajustar la frecuencia del flicker
 + Un celular con cámara :iphone:
 
-![schematic](/SimplePWM_RS-VS/SimplePWM_RS-VS.svg)
+![schematic](/SimplePWM_RS-VS/SimplePWM_RS-VS.png)
 
 #### Software
 Descargue y descomprima este repostorio en su pc, y cargue el scketch que se encuentra en `/SimplePWM_RS-VS/SimplePWM_RS-VS.ino`.  
