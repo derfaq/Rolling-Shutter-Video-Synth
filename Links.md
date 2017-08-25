@@ -1,5 +1,17 @@
 ﻿## Links
 
++ **Rolling shutter** key concept
+
++ Always CNLohr, always [Fun With Rolling Shutters and Fast LEDs](https://www.youtube.com/watch?v=-iUfZYPd-d0)
+
++ Videos de guitarras y rolling shutter:
+    * https://www.youtube.com/watch?v=ttgLyWFINJI
+    * https://www.youtube.com/watch?v=TKF6nFzpHBU
+
++ [Rollin shutter wiki-en](https://en.wikipedia.org/wiki/Rolling_shutter)
+
++ [Image sensor wiki-en](https://en.wikipedia.org/wiki/Image_sensor)
+
 + [Video synthesizer wiki-en](https://en.wikipedia.org/wiki/Video_synthesizer)
 
 + [Flicker  wiki-en](https://en.wikipedia.org/wiki/Flicker_(screen)
@@ -17,18 +29,6 @@ Indoor Positioning with Mobile Phones and Visible Light
 of CMOS imagers can be leveraged to receive many bits of data
 encoded in the optical transmissions with just a single frame capture"  
 >
-"When capturing an image, most CMOS imagers expose one or
+>"When capturing an image, most CMOS imagers expose one or
 more columns of pixels, but read out only one column at a time,
 sweeping across the image at a fixed scan rate to create a rolling shutter"
-
-+ **Rolling shutter** key concept
-
-+ Always CNLohr, alwaysFun With [Rolling Shutters and Fast LEDs](https://www.youtube.com/watch?v=-iUfZYPd-d0)
-
-+ Videos de guitarras y rolling shutter:
-    * https://www.youtube.com/watch?v=ttgLyWFINJI
-    * https://www.youtube.com/watch?v=TKF6nFzpHBU
-
-+ from web
-
-+ from pc
