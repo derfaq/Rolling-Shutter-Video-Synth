@@ -28,3 +28,5 @@ sweeping across the image at a fixed scan rate to create a rolling shutter"
 + Videos de guitarras y rolling shutter:
     * https://www.youtube.com/watch?v=ttgLyWFINJI
     * https://www.youtube.com/watch?v=TKF6nFzpHBU
+
++ from pc
