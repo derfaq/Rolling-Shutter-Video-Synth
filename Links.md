@@ -1,4 +1,4 @@
-## Links
+﻿## Links
 
 + [Video synthesizer wiki-en](https://en.wikipedia.org/wiki/Video_synthesizer)
 
@@ -24,3 +24,7 @@ sweeping across the image at a fixed scan rate to create a rolling shutter"
 + **Rolling shutter** key concept
 
 + Always CNLohr, alwaysFun With [Rolling Shutters and Fast LEDs](https://www.youtube.com/watch?v=-iUfZYPd-d0)
+
++ Videos de guitarras y rolling shutter:
+    * https://www.youtube.com/watch?v=ttgLyWFINJI
+    * https://www.youtube.com/watch?v=TKF6nFzpHBU
