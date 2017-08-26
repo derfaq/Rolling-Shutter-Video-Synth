@@ -12,7 +12,7 @@ El parpadeo/flicker de luz puede afectar la salud de aquellas personas que sufra
 *Simpsons - 10x23 Treinta minutos sobre Tokio*
 
 ## Configuración básica
----
+
 ### Hardware
 Hacer un RS-VS con Arduino es muy sencillo, en su configuración mas simple solo necesita:
 + Arduino UNO (o cualquiera basado en el micro ATmega328)
