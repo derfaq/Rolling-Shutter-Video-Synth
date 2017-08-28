@@ -14,9 +14,9 @@
 
 + [Video synthesizer wiki-en](https://en.wikipedia.org/wiki/Video_synthesizer)
 
-+ [Flicker  wiki-en](https://en.wikipedia.org/wiki/Flicker_(screen)
++ [Flicker  wiki-en](https://en.wikipedia.org/wiki/Flicker_(screen))
 
-+ [Flicker fusion threshold wiki-en](Flicker fusion threshold)
++ [Flicker fusion threshold wiki-en](https://en.wikipedia.org/wiki/Flicker_fusion_threshold)
 
 + [Persistence of vision (POV) wiki-en](https://en.wikipedia.org/wiki/Persistence_of_vision)
 
@@ -24,7 +24,7 @@
 
 + Este tipo de tecnología se usa para el posicionamiento de de celulares en lugares cerrados. En este paper está explicado en detalle [Luxapose:
 Indoor Positioning with Mobile Phones and Visible Light
-](https://web.eecs.umich.edu/~prabal/pubs/papers/kuo14luxapose.pdf). Aquí hay mucha fundamentación teórica.  
+](https://web.eecs.umich.edu/~prabal/pubs/papers/kuo14luxapose.pdf). Ahí hay mucha fundamentación teórica.  
 >"the rolling shutter effect
 of CMOS imagers can be leveraged to receive many bits of data
 encoded in the optical transmissions with just a single frame capture"  

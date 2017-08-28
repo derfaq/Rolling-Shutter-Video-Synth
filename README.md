@@ -31,7 +31,7 @@ Descargue y descomprima este repostorio en su pc, y cargue el scketch que se enc
 ### Uso: Tips and tricks
 + Una vez cargado el sketch, acerque la cámara del celular lo mas posible al led. Posiblemente vea algo similar a esto:  
 ![001](/img/001.png)  
-Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigue pruebe modificar la frecuencia de la cámara en el scketch `F_CAM = 30` por `F_CAM = 25` o algún valor intermedio.  
+Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigue pruebe modificar la frecuencia de la cámara en el scketch `F_CAM = 30` por `F_CAM = 25` o algún valor intermedio y vuelva a cargarlo.  
 + Para lograr un mayor contraste en la imágen, puede (si su cámara lo permite) aumentar la sensibilidad fotográfica (ISO), que en definitiva, significa aumentar la ganancia del sensor de imagen CMOS. En mi caso (Samsung S4 mini, GT-I9190) esto se logra de la siguiente manera:  
 ![002](/img/002.png)  
 *Configuración*  
@@ -49,8 +49,8 @@ Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigu
 *Automático con silicona (sin ISO)*  
 ![007](/img/007.png)  
 *Misma imagen en modo deportes*   
-+ Por último, dirijasé al monitor serial en el Arduino IDE que se encuentra en `Herrramientas\Monitor Serie`, o presione `Ctrl+Mayús+M`. Introduzca el número de lineas que desee y presione enter, ajuste nuevamente la frecuencia con el potenciometro.   
-![](/img/008.png)  
++ Por último, dirijasé al monitor serial en el Arduino IDE que se encuentra en `Herrramientas -> Monitor Serie`, o presione `Ctrl+Mayús+M`. Introduzca el número de lineas que desee y presione enter, ajuste nuevamente la frecuencia con el potenciometro.   
+![008](/img/008.png)  
 *16 lineas*  
 
 ## Más
