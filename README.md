@@ -52,5 +52,8 @@ Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigu
 + Por último, dirijasé al monitor serial en el Arduino IDE que se encuentra en `Herrramientas -> Monitor Serie`, o presione `Ctrl+Mayús+M`. Introduzca el número de lineas que desee y presione enter, ajuste nuevamente la frecuencia con el potenciometro.   
 ![008](/img/008.png)  
 *16 lineas*  
++ En el modo video por lo general no hay tanta flexibilidad.  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N84VtNb9414" frameborder="0" allowfullscreen></iframe>  
+*Variando la frecuencia*
 
 ## Más
