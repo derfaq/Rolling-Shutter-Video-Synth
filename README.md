@@ -3,7 +3,7 @@
 *Rolling Shutter Video Synth (RS-VS)* se referire a todos aquellos dispositivos capaces de producir imagenes y videos a través de la interferencia entre la luz pulsante de un led (luz estroboscopica, flicker) y el *scan rate* de una cámara digital (CMOS).
 
 >Este repositorio se encuentra **en construcción** y la intención del mismo es poner a disposición de la comunidad esquemas y software siguiendo la filosofía open hardware y open software. Sientasé libre de copiar, distribuir, modificar y construir su propio RS-VS!.  
->La comunidad crece con la colaboración: el repositorio se encuentra **abierto** a todos aquellos que quieran contribuir, desde dejar  links, datos sobre frecuencias y camaras, traducciones, tutoriales, modificar piezas de software para agregar nuevas funcionalidades, etc.
+>La comunidad crece con la colaboración: el repositorio se encuentra **abierto** a todos aquellos que quieran contribuir, desde dejar  links, datos sobre frecuencias y cámaras, traducciones, tutoriales, modificar piezas de software para agregar nuevas funcionalidades, etc.
 
 ## Advertencia
 El parpadeo/flicker de luz puede afectar la salud de aquellas personas que sufran [epilepsia fotosensitiva](https://es.wikipedia.org/wiki/Epilepsia_fotosensitiva).
@@ -49,18 +49,20 @@ Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigu
 *Automático con silicona (sin ISO)*  
 ![007](/img/007.png)  
 *Misma imagen en modo deportes*   
-+ Por último, dirijasé al monitor serial en el Arduino IDE que se encuentra en `Herrramientas -> Monitor Serie`, o presione `Ctrl+Mayús+M`. Introduzca el número de lineas que desee y presione enter, ajuste nuevamente la frecuencia con el potenciometro.   
++ Por último, dirijasé al monitor serial en el Arduino IDE que se encuentra en `Herrramientas -> Monitor Serie`, o presione `Ctrl+Mayús+M`. Introduzca el número de líneas que desee y presione enter, ajuste nuevamente la frecuencia con el potenciometro.   
 ![008](/img/008.png)  
-*16 lineas*  
-+ En el modo video por lo general no hay tanta flexibilidad.  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N84VtNb9414" frameborder="0" allowfullscreen></iframe>  
-*Variando la frecuencia*
+*16 líneas*  
++ En el modo video por lo general no hay tanta flexibilidad. [Ver Video](https://youtu.be/N84VtNb9414).
 
 ## Más
+¡Hay muchas mas cosas que se pueden hacer!, dibujar unas líneas con un led esta bien, pero ¿como variar el ancho de la línea/pulso? ¿y si el ancho varía de línea en línea? ¿y si le agregamos otros colores? ¿podemos enviar información o alguna clase de código al celular? ¿que otras maneras hay de generar este efecto sin usar arduino?.  
+En este repositorio encontrará distintas carpetas con sketchs con diversas funcionalidades. Cada carpeta además, contiene un archivo para [Fitzing](http://fritzing.org/home/) el cual posee el esquemático y el dibujo del circuito, y un archivo README con una breve explicación del funcionamiento.  
+De momento estos son los sketchs disponibles:
++ **Simple PWM RS-VS**: genera una onda cuadrada cuya frecuencia depende del scan rate de la camara y la cantidad de líneas que querramos dibujar sobre la pantalla.
++ **Full PWM RS-VS**: genera una señal PWM, cuya frecuencia depende del scan rate de la camara y la cantidad de líneas y además podemos variar el ancho del pulso/ancho de la línea.
 
 
 
 ---
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /> © Facundo Daguerre, esta documentación está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
-
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /> © 2017 Facundo Daguerre, esta documentación está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
