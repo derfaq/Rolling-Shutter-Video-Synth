@@ -1,4 +1,4 @@
-# Rolling Shutter Video Synth
+﻿# Rolling Shutter Video Synth
 
 *Rolling Shutter Video Synth (RS-VS)* se referire a todos aquellos dispositivos capaces de producir imagenes y videos a través de la interferencia entre la luz pulsante de un led (luz estroboscopica, flicker) y el *scan rate* de una cámara digital (CMOS).
 
@@ -57,3 +57,10 @@ Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigu
 *Variando la frecuencia*
 
 ## Más
+
+
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /> © Facundo Daguerre, esta documentación está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
+
