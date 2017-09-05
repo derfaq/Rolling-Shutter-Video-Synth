@@ -18,7 +18,7 @@ Hacer un RS-VS con Arduino es muy sencillo, en su configuración mas simple solo
 + Arduino UNO (o cualquiera basado en el micro ATmega328)
 + Un LED
 + Una resistencia de entre 150/220/470 ohms, para limitar la corriente del led
-+ Un potenciometro de 10k ohms, para ajustar la frecuencia del flicker
++ Dos potenciometros de 10k ohms, para ajustar la frecuencia del flicker y la cantidad de líneas.
 + Un celular con cámara :iphone:
 
 ![schematic](/SimplePWM_RS-VS/SimplePWM_RS-VS.png)
@@ -31,7 +31,7 @@ Descargue y descomprima este repostorio en su pc, y cargue el scketch que se enc
 ### Uso: Tips and tricks
 + Una vez cargado el sketch, acerque la cámara del celular lo mas posible al led. Posiblemente vea algo similar a esto:  
 ![001](/img/001.png)  
-Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigue pruebe modificar la frecuencia de la cámara en el scketch `F_CAM = 30` por `F_CAM = 25` o algún valor intermedio y vuelva a cargarlo.  
+Regule el potenciometro conectado a A1 para fijar la cantidad de lineas en la pantalla, y ajuste el potenciometro conectado a A0 hasta que obtenga una imagen estática, si no lo consigue pruebe modificar la frecuencia de la cámara en el scketch `F_CAM = 30` por `F_CAM = 25` o algún valor intermedio y vuelva a cargarlo.  
 + Para lograr un mayor contraste en la imágen, puede (si su cámara lo permite) aumentar la sensibilidad fotográfica (ISO), que en definitiva, significa aumentar la ganancia del sensor de imagen CMOS. En mi caso (Samsung S4 mini, GT-I9190) esto se logra de la siguiente manera:  
 ![002](/img/002.png)  
 *Configuración*  
@@ -49,10 +49,10 @@ Regule el potenciometro hasta que obtenga una imagen estática, si no lo consigu
 *Automático con silicona (sin ISO)*  
 ![007](/img/007.png)  
 *Misma imagen en modo deportes*   
-+ Por último, dirijasé al monitor serial en el Arduino IDE que se encuentra en `Herrramientas -> Monitor Serie`, o presione `Ctrl+Mayús+M`. Introduzca el número de líneas que desee y presione enter, ajuste nuevamente la frecuencia con el potenciometro.   
++ Regulando el potenciometro conectado a A1 controlamos la cantidad de líneas:   
 ![008](/img/008.png)  
 *16 líneas*  
-+ En el modo video por lo general no hay tanta flexibilidad. [Ver Video](https://youtu.be/N84VtNb9414).
+
 
 ## Más
 ¡Hay muchas mas cosas que se pueden hacer!, dibujar unas líneas con un led esta bien, pero ¿como variar el ancho de la línea/pulso? ¿y si el ancho varía de línea en línea? ¿y si le agregamos otros colores? ¿podemos enviar información o alguna clase de código al celular? ¿que otras maneras hay de generar este efecto sin usar arduino?.  
