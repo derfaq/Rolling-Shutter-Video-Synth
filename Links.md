@@ -32,3 +32,19 @@ encoded in the optical transmissions with just a single frame capture"
 >"When capturing an image, most CMOS imagers expose one or
 more columns of pixels, but read out only one column at a time,
 sweeping across the image at a fixed scan rate to create a rolling shutter"
+
+---
+
+https://arduino-info.wikispaces.com/Timers-Arduino
+
+https://arduino-info.wikispaces.com/Arduino-PWM-Frequency
+
+https://oscarliang.com/arduino-timer-and-interrupt-tutorial/
+
+http://www.instructables.com/id/Arduino-Timer-Interrupts/
+
+https://learn.adafruit.com/multi-tasking-the-arduino-part-2/overview
+
+lectura obligada http://www.righto.com/2009/07/secrets-of-arduino-pwm.html
+
+https://www.luisllamas.es/salidas-analogicas-pwm-en-arduino/
