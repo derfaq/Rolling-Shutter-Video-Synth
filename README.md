@@ -1,6 +1,7 @@
 # Rolling Shutter Video Synth
+#### De como observar señales con una cámara digital y generarlas usando Arduino  
 
-*Rolling Shutter Video Synth (RS-VS)* refiere a todos aquellos dispositivos creados con la finalidad de producir imágenes y videos a través de la interferencia entre la luz pulsante de un led (strobe, flicker, PWM, etc) y el *scan rate* del *rolling shutter* de una cámara digital (CMOS).
+*Rolling Shutter Video Synth (RS-VS)* refiere a todos aquellos dispositivos creados con la finalidad de producir imágenes y videos a través del conjunto de una cámara digital (CMOS) y la luz pulsante de uno o más leds, haciendo uso para ello, de la interferencia entre la frecuencia de una señal que enciende y apaga el led y el *scan rate* del [*rolling shutter*](https://en.wikipedia.org/wiki/Rolling_shutter) del [sensor de imagen CMOS](https://es.wikipedia.org/wiki/Sensor_CMOS) de la cámara digital.
 
 ![RS-VS](/img/Screenshot.png "RS-VS")
 
@@ -9,11 +10,11 @@
 
 
 ## Tabla de contenidos
-<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
-- [Tabla de contenidos](#tabla-de-contenidos)
 - [Introducción](#introduccin)
 	- [Breve historia del concepto](#breve-historia-del-concepto)
+	- [Un poco de teoría](#un-poco-de-teora)
 - [Advertencia](#advertencia)
 - [Configuración básica](#configuracin-bsica)
 	- [Hardware](#hardware)
@@ -25,10 +26,15 @@
 
 ## Introducción
 ### Breve historia del concepto
-Tal vez *Rolling Shutter Video Synth* no sea el mejor nombre para describir al efecto que se produce al acercar la cámara de un celular a un led que parpadea a una determinada frecuencia, pero seguro es el nombre mas pedante, soberbio y llamativo. Realmente no sabía que nombre ponerle, y fue cambiando a lo largo del tiempo, en un principio pensé en llamar este repositorio RGBTimers, en referencia a uno de los primeros scketch en el que usaba un led RGB y timers para variar la frecuencia de cada color. Luego pensé que no era necesario un led RGB, y que sería elegante usar un solo led y exagerar un poco la expresión, así pensé en ponerle Flicker Sync Video Synth, flicker en referencia al parpadeo que se produce en los leds y Video Synth para remarcar la idea de que se busca el efecto/fenómeno de interferencia (cuando en general se trata de evitar) para generar imágenes y videos. Finalmente, después de una investigación más profunda opté por Rolling Shutter Video Synth, dado que Rolling Shutter hace referencia correctamente al principio de funcionamiento de las camáras digitales que permite este efecto.  
-Dejando de lado el origen del nombre, 
+Tal vez *Rolling Shutter Video Synth* no sea el mejor nombre para describir al efecto que se produce al acercar la cámara de un celular a un led que parpadea a una determinada frecuencia, pero seguro es el nombre mas pedante, soberbio y llamativo :trollface:. Realmente no sabía que nombre ponerle, y fue cambiando a lo largo del tiempo, mas que nada por mi ignorancia sobre el tema y porque no encontré un término preexistente.  
+En un principio pensaba llamar este repositorio RGBTimers, en referencia a uno de los primeros scketch en el que usaba un led RGB y timers para variar la frecuencia de cada color. Luego pensé que no era necesario un led RGB, que sería mejor hacerlo lo más simple posible y usar un solo led y exagerar un poco la expresión, así opté en nombrarlo como Flicker Sync Video Synth: flicker en referencia al parpadeo que se produce en los leds, sync por la sincronización entre el flicker y el scan rate de la camara, y Video Synth para remarcar la idea de que se busca el efecto/fenómeno de interferencia (cuando en general se trata de evitar) para generar imágenes y videos.  
+Finalmente, después de una investigación más profunda me decidí por Rolling Shutter Video Synth, dado que Rolling Shutter hace referencia correctamente al principio de funcionamiento de las camáras digitales que permite este efecto.  
+Esta idea surgió de una obervación casual. Tratando de explicarle a un colega mexicano como configurar los registros del arduino (ATmega 328) para generar una señal PWM a una determinada frecuencia, se me ocurrió que sería didáctico encender y apagar un led de esta manera, a un frecuencia tan baja que fuera posible ver los cambios en las configuraciones sin la necesidad de ningún instrumento de medición como por ejemplo un osciloscopio. Luego el plan era ir aumentando en frecuencia con un potenciometro, lo que es, en definitiva, un generador de onda cuadrada.  
+Dado que nos comunicabamos por hangouts decidí acercar (mas de la cuenta eso si) la cámara del celular al led y variar la frecuencia. Noté unas lineas y después de algunos ajustes, me di cuenta de que lo que estaba viendo era la onda cuadrada, el encendido y apagado del led, de alguna manera podía usar la cámara como un osciloscopio! :smiley:, no solo eso sino también podía generar y tratar de *sintonizar* con la cámara para generar el patrón de lineas que quisiera :clap::clap:.  
 
-
+### Un poco de teoría
+La definición de un Rolling Shutter Video Synth (abreviado RS-VS a partir de ahora) es muy amplia, no hay restricción para los métodos para generar la señal que enciende y apaga el led, puede ser desde un generador de funciones, un microcontrolador, etc. simpre que se cumpla la condición de que exista cierta sincronía con la cámara y que ésta sea de tipo CMOS.  
+De momento en este repositorio la idea es utilizar la plataforma Arduino para manejar el led, por la flexivilidad que nos va a dar la programación y sencillamente porque así surgió el proyecto. Pero no quiere decir que sea la única manera de lograr el mismo objetivo: *el conjunto de una camara CMOS con rolling shutter y un led, se convierte efectivamente, en una especie de osciloscopio en el rango de la audio frecuencia*.
 
 
 ## Advertencia
