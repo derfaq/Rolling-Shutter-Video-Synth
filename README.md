@@ -1,7 +1,7 @@
 # Rolling Shutter Video Synth
 #### De como observar señales con una cámara digital y generarlas usando Arduino  
 
-*Rolling Shutter Video Synth (RS-VS)* refiere a todos aquellos dispositivos creados con la finalidad de producir imágenes y videos a través del conjunto de una cámara digital (CMOS) y la luz pulsante de uno o más leds, haciendo uso para ello, de la interferencia entre la frecuencia de una señal que enciende y apaga el led y el *scan rate* del [*rolling shutter*](https://en.wikipedia.org/wiki/Rolling_shutter) del [sensor de imagen CMOS](https://es.wikipedia.org/wiki/Sensor_CMOS) de la cámara digital.
+*Rolling Shutter Video Synth (RS-VS)* refiere a todos aquellos dispositivos creados con la finalidad de producir imágenes y videos a través del conjunto de una cámara digital (CMOS) y uno o más leds, haciendo uso para ello, de la interferencia entre la frecuencia de una señal que enciende y apaga el led y el *scan rate* del [*rolling shutter*](https://en.wikipedia.org/wiki/Rolling_shutter) del [sensor de imagen CMOS](https://es.wikipedia.org/wiki/Sensor_CMOS) de la cámara digital.
 
 ![RS-VS](/img/Screenshot.png "RS-VS")
 
@@ -34,7 +34,7 @@ Dado que nos comunicabamos por hangouts decidí acercar (mas de la cuenta eso si
 
 ### Un poco de teoría
 La definición de un Rolling Shutter Video Synth (abreviado RS-VS a partir de ahora) es muy amplia, no hay restricción para los métodos para generar la señal que enciende y apaga el led, puede ser desde un generador de funciones, un microcontrolador, etc. simpre que se cumpla la condición de que exista cierta sincronía con la cámara y que ésta sea de tipo CMOS.  
-De momento en este repositorio la idea es utilizar la plataforma Arduino para manejar el led, por la flexivilidad que nos va a dar la programación y sencillamente porque así surgió el proyecto. Pero no quiere decir que sea la única manera de lograr el mismo objetivo: *el conjunto de una camara CMOS con rolling shutter y un led, se convierte efectivamente, en una especie de osciloscopio en el rango de la audio frecuencia*.
+De momento en este repositorio la idea es utilizar la plataforma Arduino para manejar el led, por la flexibilidad que nos va a dar la programación y sencillamente porque así surgió el proyecto. Pero no quiere decir que sea la única manera de lograr el mismo objetivo: *el conjunto de una camara CMOS con rolling shutter y un led, se convierte efectivamente, en una especie de osciloscopio en el rango de la audio frecuencia*.
 
 
 ## Advertencia

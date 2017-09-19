@@ -6,14 +6,13 @@
  *    This scketch generate a PWM signal over pin 10 with a frequency
  *    wich depends on the scan rate of the camera (F_CAM) and the number
  *    of lines that we want create over the screen (lines). Also we can control
- *    the duty cycle by a potentiometer conected to A1.
- *    A fine tunning of frequency is perform manually by turning a potentiometer
- *    conected to A0, and the number of lines can be assignment through the 
- *    serial monitor, just typing it.
+ *    the duty cycle by a potentiometer conected to A2.
+ *    A fine tunning of frequency is done manually by turning a potentiometer
+ *    conected to A0, and the number of lines through another potentiometer
+ *    in A1.
  *    
  *  The circuit:
- *    9 fh  
- *    * Two potentiometer connected to analog pin 0, and 1.
+ *    * Three potentiometer connected to analog pin 0, pin 1 and 3.
  *        Center pin of the potentiometer goes to the analog pin,
  *        side pins of the potentiometer go to +5V and ground
  *    * LED w/ 150 ~ 470 ohm resistor, 
@@ -25,7 +24,6 @@
 
 
 #define F_CAM 30          //Change it according to your device
-unsigned int lines = 2;   //Lines in screen
 
 void setup() 
 {
@@ -41,23 +39,19 @@ void setup()
 
 void loop()
 {
-  //Manual tunning of frequency
+  //Fine tunning of frequency
   static int shift;
   shift = analogRead(A0) - 512;
+
+  //Number of lines
+  static unsigned int lines; 
+  lines = analogRead(A1)>>4; //1024/16 = 64 lines max
+
+  //setFrequency
   setFrequency(lines, shift);
-  
-  //Numeber of lines, defined through the serial port
-  static int temp;
-  if(Serial.available()>0){
-      temp = Serial.parseInt();
-      if(temp){
-        lines = temp;
-        setFrequency(lines, shift);
-      }
-  }
 
   //Set the duty cicle(0 full duty, 1023 off)
-  setDuty(analogRead(A1));
+  setDuty(analogRead(A2));
   
   delay(2); 
 }
@@ -68,18 +62,18 @@ void initTimer1()
   TCCR1B = 0; // Timer/Counter1 Control Register B, reset
   TCCR1A |= (1<<WGM11)|(1<<WGM10)|(1<<COM1B1)|(1<<COM1B0); //Set on compare match, when up-counting
   TCCR1B |= (1<<WGM13); //PWM, Phase Correct w/ TOP in 0CRA 
-  setFrequency(lines, 0);
+  setFrequency(2, 0);
 }
 
 //This code is based in part of arduino core library Tone.cpp
 void setFrequency(unsigned int _lines, int _shift)
 {
-  uint32_t ocr = F_CPU / ( F_CAM * 2 * _lines ) - 1 + _shift*2;
+  uint32_t ocr = F_CPU / ( F_CAM * 2 * _lines ) - 1 + _shift;
   uint8_t prescalarbits = 0b001;
   
   if (ocr > 0xffff)
   {
-     ocr = F_CPU / ( F_CAM  * 2 * lines * 64 ) - 1 + _shift;
+     ocr = F_CPU / ( F_CAM  * 2 * _lines * 64 ) - 1 + _shift;
      prescalarbits = 0b011;
   }
   
