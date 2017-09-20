@@ -1,3 +1,8 @@
 # Simple PWM RS-VS
 
-Descripción del sketch SimplePWM_RS-VS.ino
+### Descripción
+
+### Esquemático
+![esquemático](SimplePWM_RS-VS.png)
+
+### Código

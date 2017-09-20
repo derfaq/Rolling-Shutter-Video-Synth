@@ -1,3 +1,8 @@
 # Full PWM RS-VS
 
-Descripción del sketch FullPWM_RS-VS.ino
+### Descripción
+
+### Esquemático
+![esquemático](FullPWM_RS-VS.png)
+
+### Código

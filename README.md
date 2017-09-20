@@ -20,7 +20,7 @@
 	- [Hardware](#hardware)
 	- [Software](#software)
 	- [Uso: Tips and tricks](#uso-tips-and-tricks)
-- [Más](#ms)
+- [Más](#más)
 
 <!-- /TOC -->
 
@@ -92,6 +92,7 @@ En este repositorio encontrará distintas carpetas con sketchs con diversas func
 De momento estos son los sketchs disponibles:
 + **Simple PWM RS-VS**: genera una onda cuadrada cuya frecuencia depende del scan rate de la camara y la cantidad de líneas que querramos dibujar sobre la pantalla.
 + **Full PWM RS-VS**: genera una señal PWM, cuya frecuencia depende del scan rate de la camara y la cantidad de líneas y además podemos variar el ancho del pulso/ancho de la línea.
++ **RGB PWM RS-VS**: genera tres señales PWM para controlar un led RGB. Podemos modificar frecuencia (sin ajuste fino) y el ciclo de trabajo de cada una de las señales.
 
 
 
