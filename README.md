@@ -14,9 +14,9 @@
 
 - [Introducción](#introduccin)
 	- [Breve historia del concepto](#breve-historia-del-concepto)
-	- [Un poco de teoría](#un-poco-de-teora)
+	- [Un poco de teoría](#un-poco-de-teoría)
 - [Advertencia](#advertencia)
-- [Configuración básica](#configuracin-bsica)
+- [Configuración básica](#configuración-básica)
 	- [Hardware](#hardware)
 	- [Software](#software)
 	- [Uso: Tips and tricks](#uso-tips-and-tricks)
@@ -90,9 +90,9 @@ Regule el potenciometro conectado a A1 para fijar la cantidad de lineas en la pa
 ¡Hay muchas mas cosas que se pueden hacer!, dibujar unas líneas con un led esta bien, pero ¿como variar el ancho de la línea/pulso? ¿y si el ancho varía de línea en línea? ¿y si le agregamos otros colores? ¿podemos enviar información o alguna clase de código al celular? ¿que otras maneras hay de generar este efecto sin usar arduino?.  
 En este repositorio encontrará distintas carpetas con sketchs con diversas funcionalidades. Cada carpeta además, contiene un archivo para [Fitzing](http://fritzing.org/home/) el cual posee el esquemático y el dibujo del circuito, y un archivo README con una breve explicación del funcionamiento.  
 De momento estos son los sketchs disponibles:
-+ **Simple PWM RS-VS**: genera una onda cuadrada cuya frecuencia depende del scan rate de la camara y la cantidad de líneas que querramos dibujar sobre la pantalla.
-+ **Full PWM RS-VS**: genera una señal PWM, cuya frecuencia depende del scan rate de la camara y la cantidad de líneas y además podemos variar el ancho del pulso/ancho de la línea.
-+ **RGB PWM RS-VS**: genera tres señales PWM para controlar un led RGB. Podemos modificar frecuencia (sin ajuste fino) y el ciclo de trabajo de cada una de las señales.
++ [**Simple PWM RS-VS**](https://github.com/derfaq/Rolling-Shutter-Video-Synth/tree/master/SimplePWM_RS-VS): genera una onda cuadrada cuya frecuencia depende del scan rate de la camara y la cantidad de líneas que querramos dibujar sobre la pantalla.
++ [**Full PWM RS-VS**](https://github.com/derfaq/Rolling-Shutter-Video-Synth/tree/master/FullPWM_RS-VS): genera una señal PWM, cuya frecuencia depende del scan rate de la camara y la cantidad de líneas y además podemos variar el ancho del pulso/ancho de la línea.
++ [**RGB PWM RS-VS**](https://github.com/derfaq/Rolling-Shutter-Video-Synth/tree/master/RGB_PWM_RS-VS): genera tres señales PWM para controlar un led RGB. Podemos modificar frecuencia (sin ajuste fino) y el ciclo de trabajo de cada una de las señales.
 
 
 
